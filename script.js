@@ -19,10 +19,10 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        header.style.backgroundColor = 'rgba(26, 42, 74, 0.95)';
+        header.style.backgroundColor = 'rgba(10, 186, 181, 0.95)';
         header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     } else {
-        header.style.backgroundColor = '#1a2a4a';
+        header.style.backgroundColor = '#0ABAB5';
         header.style.boxShadow = 'none';
     }
 });

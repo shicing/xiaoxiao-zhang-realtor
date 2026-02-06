@@ -1,12 +1,13 @@
 :root {
-    --navy: #1a2a4a;
-    --navy-light: #2a3a5a;
-    --gold: #c9a962;
-    --gold-light: #d4bc7d;
+    --navy: #0ABAB5;
+    --navy-light: #0fcfca;
+    --gold: #ffffff;
+    --gold-light: #f0f0f0;
     --white: #ffffff;
     --off-white: #f8f8f8;
     --gray: #666666;
     --light-gray: #e5e5e5;
+    --dark: #2c3e50;
 }
 
 * {
@@ -47,12 +48,14 @@ h1, h2, h3 {
 }
 
 .btn-primary {
-    background-color: var(--gold);
+    background-color: var(--white);
     color: var(--navy);
+    border: 2px solid var(--white);
 }
 
 .btn-primary:hover {
-    background-color: var(--gold-light);
+    background-color: transparent;
+    color: var(--white);
 }
 
 /* Header & Navigation */
@@ -207,7 +210,7 @@ h1, h2, h3 {
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--gold);
+    color: var(--navy);
     font-weight: bold;
 }
 
@@ -365,7 +368,18 @@ h1, h2, h3 {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--gold);
+    border-color: var(--navy);
+}
+
+.contact-form .btn-primary {
+    background-color: var(--navy);
+    color: var(--white);
+    border: 2px solid var(--navy);
+}
+
+.contact-form .btn-primary:hover {
+    background-color: transparent;
+    color: var(--navy);
 }
 
 /* Footer */
